@@ -15,7 +15,7 @@ The builder reuses the upstream level validator, verifies each Git blob and
 SHA-256, excludes invalid levels, and stops above 4,000 levels, 10 MB per level
 or 64 MB total. A top-level 404 file prevents SPA fallback for missing JSON.
 
-The fork checks upstream every hour (minute 23) on a
+The fork checks upstream every 30 minutes (minute 23 and 53 of each hour) on a
 standard free public Linux runner. Scheduled runs can be delayed by GitHub.
 It does not upload workflow artifacts or use Actions cache. Only upstream changes
 are merged; merge conflicts stop the job rather than overwriting fork changes.
