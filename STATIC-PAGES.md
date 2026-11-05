@@ -15,9 +15,12 @@ The builder reuses the upstream level validator, verifies each Git blob and
 SHA-256, excludes invalid levels, and stops above 4,000 levels, 10 MB per level
 or 64 MB total. A top-level 404 file prevents SPA fallback for missing JSON.
 
-The fork checks upstream every two hours on a standard free public Linux runner.
+The fork checks upstream every 30 minutes (minute 23 and 53 of each hour) on a
+standard free public Linux runner. Scheduled runs can be delayed by GitHub.
 It does not upload workflow artifacts or use Actions cache. Only upstream changes
 are merged; merge conflicts stop the job rather than overwriting fork changes.
-Pages deploys pushes to `main`. Free build limits must not be bypassed by upgrading.
+Unchanged upstream checks create no commit and trigger no Pages build.
+Pages deploys pushes to `main`. The Free plan has 500 builds per month; reaching
+that limit must stop deployments rather than trigger an upgrade or paid service.
 
 The old R2 bucket and VPS sync remain deleted/disabled. Never restore them.
