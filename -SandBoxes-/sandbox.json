@@ -69,19 +69,19 @@
             "code name: sandbox",
             "```",
             "",
-            "请享用！"
+            "<span style='color:#f48771'>请享用！</span>"
           ],
           "en": [
             "# Level Guide",
             "",
-            "This is **Sandbox** Mode：",
+            "This is **Sandbox** Mode:",
             "",
             "",
             "```",
             "code name: sandbox",
             "```",
             "",
-            "Enjoy!"
+            "<span style='color:#f48771'>Enjoy!</span>"
           ]
         },
         "StageModule": "RTID(TutorialStage@LevelModules)",
