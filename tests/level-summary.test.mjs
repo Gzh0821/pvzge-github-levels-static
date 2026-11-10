@@ -21,4 +21,7 @@ test('summary preserves localized titles, author spelling and explicit zeroes wi
   assert.equal(missing.startingSun, null)
   const named = summarizeLevel({ objects: [{ objclass: 'LevelDefinition', objdata: { Name: '[EGYPT_LEVEL_NAME]', LevelNumber: 4 } }] }, 'one.json')
   assert.equal(named.title.zh, '神秘埃及 - 第 4 天')
+  const unresolved = summarizeLevel({ '#comment': '[EPIC_PLANT_LEVEL_NAME]', objects: [{ objclass: 'LevelDefinition', objdata: { Name: '[EPIC_PLANT_LEVEL_NAME]' } }] }, 'Author/plant-level.json')
+  assert.equal(unresolved.title.default, 'plant-level.json')
+  assert.equal(unresolved.title.zh, undefined)
 })

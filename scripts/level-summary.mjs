@@ -19,8 +19,11 @@ export function summarizeLevel(raw, path) {
   const definition = data('LevelDefinition') || {}
   const seed = data('SeedBankProperties')
   const manager = objects.find(object => object?.objclass === 'WaveManagerProperties' && Array.isArray(object.objdata?.Waves))?.objdata
+  const comment = text(raw['#comment'])
+  const fallbackTitle = comment && !/^\[[A-Z0-9_]+\]$/.test(comment) && !/<[A-Z_]+>/.test(comment)
+    ? comment : path.split('/').at(-1)
   return {
-    title: { default: text(raw['#comment'] || path.split('/').at(-1)), ...localized(definition.Name, definition.NameMultiLanguage, definition.LevelNumber) },
+    title: { default: fallbackTitle, ...localized(definition.Name, definition.NameMultiLanguage, definition.LevelNumber) },
     description: localized(definition.Description, definition.DescriptionMultiLanguage, definition.LevelNumber),
     author: text(definition.WrittenBy || definition.WritenBy),
     folder: path.split('/')[0],
