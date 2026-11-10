@@ -26,6 +26,8 @@ Each author must place their levels (files or subfolders) **inside a folder name
 ```
 ### Automatic level index
 
+The static Pages build also emits `/api/github-levels/catalog.json` for the official website's level browser. It contains localized names/descriptions, authors, stage, available starting-sun/wave/seed information, original paths, byte sizes and Git blob SHAs; the client tree/raw endpoints remain unchanged. The browser fetches a single catalog, then the selected level on demand. `scripts/level-text.mjs` contains official `MultiLanguage.LevelName` text from game 0.16.15 for resolving built-in name keys. This is static build output, with no Functions, Workers or R2 bindings.
+
 After a push to `main`, the **Generate levels index** GitHub Actions workflow generates and commits `levels-index.json` when its contents change. Maintainers can also run it manually from the Actions tab. Do not edit the generated index by hand.
 
 The index contains `version: 1`, a `levels` list (`path`, byte `size`, and `sha256`), and an `invalid` list (`path` and `reason`). Only tracked JSON files are scanned; the index excludes itself. Invalid JSON/UTF-8, non-level files, symlinks, and files exceeding the basic validation limits are excluded and reported. This checks format and structure, not gameplay.

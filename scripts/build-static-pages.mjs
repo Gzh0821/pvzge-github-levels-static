@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto'
 import { lstat, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { summarizeLevel } from './level-summary.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const output = resolve(root, 'public-pages')
@@ -80,6 +81,14 @@ for (const { entry, bytes } of files) {
 }
 await mkdir(resolve(output, 'api/github-levels/git/trees'), { recursive: true })
 await writeFile(resolve(output, 'api/github-levels/git/trees/main'), directory)
+await writeFile(resolve(output, 'api/github-levels/catalog.json'), JSON.stringify({
+  version: 1,
+  tree: git('rev-parse', 'HEAD^{tree}').trim(),
+  levels: files.map(({ entry, bytes }) => ({
+    path: entry.path, sha: entry.sha, size: entry.size,
+    ...summarizeLevel(JSON.parse(bytes.toString('utf8')), entry.path),
+  })),
+}))
 await writeFile(resolve(output, '_headers'), `/api/github-levels/*\n  Content-Type: application/json; charset=utf-8\n  Access-Control-Allow-Origin: *\n  Access-Control-Expose-Headers: ETag, Content-Length\n  Cache-Control: public, max-age=60\n  X-Content-Type-Options: nosniff\n`)
 await writeFile(resolve(output, '404.html'), '<!doctype html><meta charset="utf-8"><title>Not Found</title>Not Found\n')
 console.log(JSON.stringify({ service: 'github-levels-static-pages', levels: files.length,
