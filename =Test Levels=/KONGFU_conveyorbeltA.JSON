@@ -22,7 +22,19 @@
                 ],
                 "Name": "[KONGFU_LEVEL_NAME]",
                 "WrittenBy": "莱池_余垛",
-                "StageModule": "RTID(MonkStage@LevelModules)"
+                "StageModule": "RTID(MonkStage@LevelModules)",
+        "MarkdownMultiLanguage": {
+          "zh": [
+            "# 关卡说明",
+            "",
+            "武林寺庙拓展关卡 传送带A"
+          ],
+          "en": [
+            "# Level Guide",
+            "",
+            "Kongfu Temple Expansion Level: Conveyor Belt A"
+          ]
+        }
             }
         },
         {

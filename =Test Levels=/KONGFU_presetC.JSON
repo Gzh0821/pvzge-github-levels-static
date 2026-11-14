@@ -20,7 +20,19 @@
                 ],
                 "Name": "[KONGFU_LEVEL_NAME]",
                 "WrittenBy": "莱池_余垛",
-                "StageModule": "RTID(MonkStage@LevelModules)"
+                "StageModule": "RTID(MonkStage@LevelModules)",
+        "MarkdownMultiLanguage": {
+          "zh": [
+            "# 关卡说明",
+            "",
+            "武林寺庙拓展关卡 固定选卡C"
+          ],
+          "en": [
+            "# Level Guide",
+            "",
+            "Kongfu Temple Expansion Level: Locked and Loaded C"
+          ]
+        }
             }
         },
         {
