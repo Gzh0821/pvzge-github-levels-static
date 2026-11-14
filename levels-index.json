@@ -492,9 +492,14 @@
       "sha256": "be7c84a706427f002676a4a51df19466de41ea3d58cd4b364c740320a0b1237d"
     },
     {
+      "path": "=Test Levels=/KONGFU_challengeB.JSON",
+      "size": 28779,
+      "sha256": "3f6c4932a9d400bc701d37660f4a1be2ac4cacc4085702336d6bec291734e287"
+    },
+    {
       "path": "=Test Levels=/KONGFU_presetA.JSON",
-      "size": 23457,
-      "sha256": "1ef09910e663cf2e85e75e09ce711e4a50f23a0356942b3f9b4dd48150d29dab"
+      "size": 26147,
+      "sha256": "a2b3b476784c7ec0255fae4b99bd37ce1f3ecf6a8d7c0f86d65411782b96f8de"
     },
     {
       "path": "=Test Levels=/KONGFU_presetB.JSON",
@@ -512,9 +517,9 @@
       "sha256": "993a927f67da39c7362d4cd5a070022df229bbe6ea1b7a116265a3ec2133f99e"
     },
     {
-      "path": "=Test Levels=/Kongfu Challenge B.json",
-      "size": 42635,
-      "sha256": "3a5fc717f76f28756d3a4e00fe3eac61f1bfe458a0ef87b15728c5459e6687ad"
+      "path": "=Test Levels=/Kongfu Challenge TNT.json",
+      "size": 44338,
+      "sha256": "6784961b1574d637163430b55d470aba7b7ff186a353c96d589e6bcb52b89618"
     },
     {
       "path": "=Unused Official Levels=/EPIC Quest/GOLDBLOOM1.JSON",
