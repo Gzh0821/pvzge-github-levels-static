@@ -497,6 +497,11 @@
       "sha256": "3f6c4932a9d400bc701d37660f4a1be2ac4cacc4085702336d6bec291734e287"
     },
     {
+      "path": "=Test Levels=/KONGFU_conveyorbeltA.JSON",
+      "size": 29011,
+      "sha256": "b5b008157b004b00d2fba7f7f618f968ca5fbca742162fe4b5fe00720f0fdc71"
+    },
+    {
       "path": "=Test Levels=/KONGFU_presetA.JSON",
       "size": 26147,
       "sha256": "a2b3b476784c7ec0255fae4b99bd37ce1f3ecf6a8d7c0f86d65411782b96f8de"
@@ -2037,6 +2042,11 @@
       "sha256": "978f595c0b424a769558710f9671bf4da65d1d028496ab44092f01d53bcf1cb6"
     },
     {
+      "path": "P-Smithvanizi/Prescription.json",
+      "size": 16910,
+      "sha256": "04271e01830aab42538b24111e1add1ce7cc1f06e26382be1db62e6e154103ef"
+    },
+    {
       "path": "P-Smithvanizi/Seize 'Em!.json",
       "size": 14897,
       "sha256": "033369d5f1c68fd6472a9ec137da11d728d240808420e46742ae899c8f9c175b"
@@ -2597,6 +2607,11 @@
       "sha256": "7b590a62c1fc3f1d1febfb812b7d5cfc02ade06fbb3e7c438d44140006a99e3b"
     },
     {
+      "path": "WLtom/Kaizo and Parties/appease2_6+.json",
+      "size": 48683,
+      "sha256": "7c51fb10df2638549e30ec3938857b981023092afbda40480b062868aa1c379e"
+    },
+    {
       "path": "WLtom/Modern Tomorrows/modern1tomorrow.json",
       "size": 17832,
       "sha256": "71558b21af30594077b9ae0f663890ee4a64d909b76387bee5d1549cd8a5b05e"
@@ -2608,8 +2623,8 @@
     },
     {
       "path": "WLtom/Modern Tomorrows/modern3tomorrow.json",
-      "size": 23268,
-      "sha256": "a21df7b99d39ec14c9e834dba79a401f29b53d7522f42db58293c4f51b332dc2"
+      "size": 23256,
+      "sha256": "f0800eafc4df22613cc86763fd3c85ab78de6ba2387c6a2f14690b09f910a29d"
     },
     {
       "path": "WLtom/Time Twister/TT12.json",
@@ -3937,6 +3952,11 @@
       "sha256": "d3466782aab765ee5364d695010b07ce9c7f8a6947937789a5d1f1fd1767955b"
     },
     {
+      "path": "spinach/Gloom-shroom.json",
+      "size": 20423,
+      "sha256": "3dc9b4f97d6f9300e6bfd6d7257c35ce5f6e268b4d778bac80e2007fe59ba3f3"
+    },
+    {
       "path": "spinach/Shadow Family#1.json",
       "size": 19568,
       "sha256": "8b215552de6ebf32570b74f4b48febea43a652c7f9851111e90244749ed2b082"
@@ -3945,6 +3965,11 @@
       "path": "spinach/ice and fire #1.json",
       "size": 18627,
       "sha256": "2d290c208f2ddf620e02fcdad26989d37108c2cadc4ee13b8406a6301f9cb387"
+    },
+    {
+      "path": "spinach/ice and fire .json",
+      "size": 17656,
+      "sha256": "1429391650c809cefd37c2c6c1bc95865159b87257b6efebaeb7a9d4c86785a1"
     },
     {
       "path": "spinach/the shining sky #1.json",
