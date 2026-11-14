@@ -21,7 +21,19 @@
                 ],
                 "Name": "[KONGFU_LEVEL_NAME]",
                 "WrittenBy": "砹化钫FrAt",
-                "StageModule": "RTID(AbbotStage@LevelModules)"
+                "StageModule": "RTID(AbbotStage@LevelModules)",
+        "MarkdownMultiLanguage": {
+          "zh": [
+            "# 关卡说明",
+            "",
+            "武林寺庙拓展关卡 条件+自选植物C"
+          ],
+          "en": [
+            "# Level Guide",
+            "",
+            "Kongfu Temple Expansion Level: Challenge + Player-Selected Plants C"
+          ]
+        }
             }
         },
         {
