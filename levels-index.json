@@ -518,8 +518,8 @@
     },
     {
       "path": "=Test Levels=/Ancient Egypt/egypt14.json",
-      "size": 19167,
-      "sha256": "1a6ff1c84c88371fa4f51c321d4c03960976a39b3497ca1e6f84bf1d7db1b9e0"
+      "size": 19244,
+      "sha256": "8e363927f4fa085c3520caf144769977309f0511b227ada3fa9c9f3955b42aa3"
     },
     {
       "path": "=Test Levels=/Ancient Egypt/egypt15.json",
@@ -545,6 +545,11 @@
       "path": "=Test Levels=/Ancient Egypt/egypt8.json",
       "size": 17223,
       "sha256": "9d1cec4f36eb66999eb126da2961e777e49c9d520e967fd897b7ed2e01c500a2"
+    },
+    {
+      "path": "=Test Levels=/Ancient Egypt/egypt9.json",
+      "size": 22943,
+      "sha256": "3cedc23bb02187cec82c4d503d26c354af9c2727c269e7d1ec4492c0dc016ee0"
     },
     {
       "path": "=Test Levels=/Ancient Egypt/vanilla levels/egypt17.json",
